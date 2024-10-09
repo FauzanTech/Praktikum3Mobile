@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "303600835897",
+    "project_id": "praktikum3-99bdb",
+    "storage_bucket": "praktikum3-99bdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303600835897:android:353a2f2317fa661fb99ce8",
+        "android_client_info": {
+          "package_name": "com.example.praktikum3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0ih7WzkkkmeupurQsAr25d_xjW9ezwTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

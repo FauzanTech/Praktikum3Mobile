@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".res">
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="text"
+        android:background="@drawable/btn_shape"
+        android:shadowColor="#FFFFFF"
+        android:hint="Nama Lengkap"
+        android:backgroundTint="@color/white"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/btn_shape"
+        android:ems="10"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="NIM"
+        android:inputType="text"
+        android:padding="15dp"
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <EditText
+        android:id="@+id/text3"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="text"
+        android:background="@drawable/btn_shape"
+        android:shadowColor="#FFFFFF"
+        android:hint="Email"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/>
+
+    <EditText
+        android:id="@+id/text4"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="text"
+        android:background="@drawable/btn_shape"
+        android:shadowColor="#FFFFFF"
+        android:hint="Kata sandi"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3"/>
+
+    <EditText
+        android:id="@+id/text5"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="text"
+        android:background="@drawable/btn_shape"
+        android:shadowColor="#FFFFFF"
+        android:hint="Konfirmasi kata sandi"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Buat Akun"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/daftar2"
+        android:layout_width="330dp"
+        android:textSize="19dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="#F4AA41"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginTop="30dp"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text5"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        android:text="Sudah punya akun?"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daftar2"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@+id/daftar2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
