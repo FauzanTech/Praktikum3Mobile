@@ -56,11 +56,19 @@ public class home extends AppCompatActivity {
             return insets;
         });
 
+        TextView logoutBtn = findViewById(R.id.logout1);
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(home.this, MainActivity.class));
+            }
+        });
+
 
         TextView nim = findViewById(R.id.textView6);
         Intent intent = getIntent();
-        String pesan = intent.getStringExtra("nim_user");
-        if (pesan == null || intent.getStringExtra("nim_user").equals("")) {
+        String pesan = intent.getStringExtra("nama");
+        if (pesan == null || intent.getStringExtra("nama").equals("")) {
             Toast.makeText(home.this, "Tidak ada data NIM", Toast.LENGTH_LONG).show();
         } else {
             nim.setText(pesan);

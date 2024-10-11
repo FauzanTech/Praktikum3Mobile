@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -78,17 +79,26 @@ public class res extends AppCompatActivity {
                     return;
                 }
 
-                if (!pass.equals(nama)){
+                if (!pass.equals(conf_pass)){
                     edtKonfPass.setError("Password berbeda");
                     edtKonfPass.requestFocus();
                     return;
                 }
 
+                db = FirebaseDatabase.getInstance();
+                ref = db.getReference("users");
 
-                Intent intent = new Intent(res.this, log.class);
-                String pesan = String.valueOf(edtnim.getText());
-                intent.putExtra("nim_user", pesan);
-                startActivity(intent);
+                HelperClass helperClass = new HelperClass(nama, nim, email, pass, conf_pass);
+                ref.child(nim).setValue(helperClass);
+
+                Toast.makeText(res.this, "Registrasi berhasil!", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(res.this, log.class));
+
+
+//                Intent intent = new Intent(res.this, log.class);
+//                String pesan = String.valueOf(edtnim.getText());
+//                intent.putExtra("nim_user", pesan);
+//                startActivity(intent);
             }
         });
 
