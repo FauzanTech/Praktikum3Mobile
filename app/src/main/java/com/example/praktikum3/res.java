@@ -83,6 +83,10 @@ public class res extends AppCompatActivity {
                     edtKonfPass.setError("Password berbeda");
                     edtKonfPass.requestFocus();
                     return;
+                } else if (TextUtils.isEmpty(conf_pass)){
+                    edtKonfPass.setError("Masukkan Konfirmasi Password");
+                    edtKonfPass.requestFocus();
+                    return;
                 }
 
                 db = FirebaseDatabase.getInstance();

@@ -95,7 +95,7 @@ public class home extends AppCompatActivity {
 
                     Intent intent_share = new Intent(Intent.ACTION_SEND);
                     intent_share.setType("text/plain");
-                    intent_share.putExtra(Intent.EXTRA_TEXT, pesan);
+                    intent_share.putExtra(Intent.EXTRA_TEXT, intent.getStringExtra("nim_user"));
                     startActivity(Intent.createChooser(intent_share, "Share via"));
                 }
             }
